@@ -28,7 +28,7 @@ on:
         type: string
 jobs:
   input-parameters:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: print input parameters
         run: echo ${{ github.event.inputs.org }} ${{ github.event.inputs.envgrp }} ${{ github.event.inputs.bucket }} ${{ github.event.inputs.tag }} ${{ github.event.inputs.delta }}
